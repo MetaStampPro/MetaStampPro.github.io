@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#f2eee7" />
+  <meta name="description" content="MetaStamp is an on-device privacy review tool for photos and documents. Clean metadata, redact visible details, watermark purpose, and verify the copy before sharing." />
+  <title>MetaStamp — Share a clean copy</title>
+  <script>document.documentElement.classList.add('js');</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="site-shell">
+    <header class="site-header" data-header>
+      <a class="brand" href="#top" aria-label="MetaStamp home">
+        <span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span>
+        <span>MetaStamp</span>
+      </a>
+      <nav class="desktop-nav" aria-label="Primary navigation">
+        <a href="#workflow">Workflow</a>
+        <a href="#proof">Why it matters</a>
+        <a href="#privacy">Privacy</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <div class="header-actions">
+        <span class="platform-note">iOS 17+</span>
+        <a class="header-cta" href="#get">Get MetaStamp <span aria-hidden="true">↗</span></a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open navigation">
+          <span></span><span></span>
+        </button>
+      </div>
+      <nav class="mobile-menu" id="mobile-menu" aria-label="Mobile navigation">
+        <a href="#workflow">Workflow</a>
+        <a href="#proof">Why it matters</a>
+        <a href="#privacy">Privacy</a>
+        <a href="#faq">FAQ</a>
+        <a class="mobile-menu-cta" href="#get">Get MetaStamp <span aria-hidden="true">↗</span></a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero section-grid" aria-labelledby="hero-title">
+        <div class="hero-copy reveal">
+          <p class="eyebrow"><span class="eyebrow-dot"></span> On-device privacy review</p>
+          <h1 id="hero-title">Share a<br /><em>clean copy.</em></h1>
+          <p class="hero-lede">MetaStamp turns the last minute before sharing into a calm, visible check. Scan the file, cover what should stay private, and verify the copy you actually send.</p>
+          <div class="hero-actions">
+            <a class="button button-dark" href="#workflow">See the workflow <span aria-hidden="true">↓</span></a>
+            <button class="text-button demo-trigger" type="button">Preview a clean copy <span aria-hidden="true">↗</span></button>
+          </div>
+          <div class="hero-proof">
+            <div class="proof-item"><strong>0</strong><span>uploads<br />required</span></div>
+            <div class="proof-rule" aria-hidden="true"></div>
+            <div class="proof-item"><strong>3</strong><span>free exports<br />every day</span></div>
+            <div class="proof-rule" aria-hidden="true"></div>
+            <div class="proof-item"><strong>1</strong><span>verified copy<br />to share</span></div>
+          </div>
+        </div>
+
+        <div class="hero-stage reveal reveal-delay" aria-label="MetaStamp review preview">
+          <div class="stage-note note-top"><span class="note-dot note-mint"></span> Local processing</div>
+          <div class="stage-note note-bottom"><span class="note-dot note-amber"></span> Before you share</div>
+          <div class="review-card" data-review-card>
+            <div class="review-topline">
+              <span class="mono-label">REVIEW / 01</span>
+              <span class="review-status"><span class="status-dot"></span> Ready to export</span>
+            </div>
+            <div class="photo-window">
+              <picture>
+                <source srcset="assets/sample-desk.webp" type="image/webp" />
+                <img src="assets/sample-desk.png" alt="A camera and package on a desk, used as a sample photo" />
+              </picture>
+              <div class="scan-corner corner-tl"></div><div class="scan-corner corner-tr"></div><div class="scan-corner corner-bl"></div><div class="scan-corner corner-br"></div>
+              <div class="redaction redaction-address"><span>REDACTED</span></div>
+              <div class="watermark-chip">FOR REVIEW ONLY · 25 SEP 2026</div>
+              <div class="scan-label label-metadata"><span class="label-pip"></span> GPS + device found</div>
+              <div class="scan-label label-visual"><span class="label-pip label-pip-amber"></span> 1 visual area suggested</div>
+            </div>
+            <div class="review-footer">
+              <div><span class="mono-label">OUTPUT</span><strong>IMG_4823_clean.jpg</strong></div>
+              <div class="verified-badge"><span>✓</span> Verified</div>
+            </div>
+          </div>
+          <div class="floating-stamp" aria-hidden="true">
+            <span class="stamp-ring">M</span>
+            <span>METASTAMP<br /><b>LOCAL / VERIFIED</b></span>
+          </div>
+        </div>
+      </section>
+
+      <section class="ticker" aria-label="Product promises">
+        <div class="ticker-track">
+          <span>METADATA</span><i>✳</i><span>VISIBLE DETAILS</span><i>✳</i><span>WATERMARKS</span><i>✳</i><span>OUTPUT CHECKS</span><i>✳</i><span>METADATA</span><i>✳</i><span>VISIBLE DETAILS</span><i>✳</i><span>WATERMARKS</span><i>✳</i><span>OUTPUT CHECKS</span><i>✳</i>
+        </div>
+      </section>
+
+      <section class="statement section-grid" id="proof" aria-labelledby="statement-title">
+        <div class="section-kicker reveal"><span>01</span><span>What MetaStamp changes</span></div>
+        <div class="statement-body reveal reveal-delay">
+          <h2 id="statement-title">Your camera roll keeps the story.<br /><span>MetaStamp decides what travels.</span></h2>
+          <p>EXIF is only one part of a file. A photo can carry a place, a device, a capture date, or a detail in the frame that was never meant to leave home. MetaStamp brings those checks into one deliberate export.</p>
+        </div>
+        <div class="statement-aside reveal reveal-delay-2"><span class="aside-line"></span><p>Make a new copy.<br />Keep the original untouched.</p></div>
+      </section>
+
+      <section class="workflow section-grid" id="workflow" aria-labelledby="workflow-title">
+        <div class="workflow-intro reveal">
+          <div class="section-kicker"><span>02</span><span>The handoff</span></div>
+          <h2 id="workflow-title">Four quiet<br /><em>decisions.</em></h2>
+          <p>Everything stays understandable: what was found, what you changed, and whether the final file passed its own check.</p>
+          <a class="arrow-link" href="#get">Start with a sample <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="workflow-steps">
+          <article class="step-card reveal">
+            <div class="step-number">01</div>
+            <div class="step-icon icon-scan" aria-hidden="true"><span></span><span></span><span></span></div>
+            <h3>Scan the file</h3>
+            <p>See location, device, capture date, authorship, and visual suggestions before anything is changed.</p>
+            <span class="step-tag">Nothing uploaded</span>
+          </article>
+          <article class="step-card reveal reveal-delay">
+            <div class="step-number">02</div>
+            <div class="step-icon icon-redact" aria-hidden="true"><span></span><span></span></div>
+            <h3>Cover the detail</h3>
+            <p>Confirm a suggested region or draw your own. The redaction becomes part of the final pixels.</p>
+            <span class="step-tag">You decide</span>
+          </article>
+          <article class="step-card reveal reveal-delay-2">
+            <div class="step-number">03</div>
+            <div class="step-icon icon-stamp" aria-hidden="true"><span>FOR</span><b>REVIEW</b></div>
+            <h3>Add the context</h3>
+            <p>Use a clear purpose watermark for a reviewer, a buyer, or a one-time handoff.</p>
+            <span class="step-tag">A visible boundary</span>
+          </article>
+          <article class="step-card step-card-dark reveal reveal-delay-3">
+            <div class="step-number">04</div>
+            <div class="step-icon icon-check" aria-hidden="true">✓</div>
+            <h3>Verify the copy</h3>
+            <p>MetaStamp reopens the export and reports what was removed, retained, or still needs attention.</p>
+            <span class="step-tag">Ready to share</span>
+          </article>
+        </div>
+      </section>
+
+      <section class="modes section-grid" aria-labelledby="modes-title">
+        <div class="section-kicker reveal"><span>03</span><span>Made for the messy middle</span></div>
+        <div class="modes-main reveal reveal-delay">
+          <div class="modes-heading">
+            <h2 id="modes-title">One review,<br /><em>many handoffs.</em></h2>
+            <p>Start with the image workflow today. Other file types keep their boundaries visible before you export.</p>
+          </div>
+          <div class="mode-tabs" role="tablist" aria-label="Use cases">
+            <button class="mode-tab is-active" type="button" role="tab" aria-selected="true" aria-controls="mode-panel" data-mode="photo">Photo</button>
+            <button class="mode-tab" type="button" role="tab" aria-selected="false" aria-controls="mode-panel" data-mode="document">Document</button>
+            <button class="mode-tab" type="button" role="tab" aria-selected="false" aria-controls="mode-panel" data-mode="batch">Batch</button>
+          </div>
+          <div class="mode-panel" id="mode-panel" role="tabpanel" aria-live="polite" tabindex="0" data-mode-panel>
+            <div class="mode-panel-copy">
+              <span class="mode-overline">PHOTO · DEFAULT CHECK</span>
+              <h3 data-mode-title>For the photo you almost shared.</h3>
+              <p data-mode-copy>Strip personal metadata, cover the address on the label, then export a copy with a purpose watermark.</p>
+              <ul class="mode-list" data-mode-list>
+                <li><span>✓</span> GPS and device fields reviewed</li>
+                <li><span>✓</span> One visual region confirmed</li>
+                <li><span>✓</span> New file verified after export</li>
+              </ul>
+            </div>
+            <div class="mode-panel-visual">
+              <div class="mini-file-card">
+                <div class="mini-file-head"><span class="file-type" data-mode-type>JPG</span><span class="mini-file-status">✓ Passed</span></div>
+                <div class="mini-file-lines"><span></span><span></span><span></span></div>
+                <div class="mini-file-meta"><span data-mode-meta>IMG_4823_clean</span><span>2.9 MB</span></div>
+              </div>
+              <div class="panel-orbit orbit-a"></div><div class="panel-orbit orbit-b"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="privacy-band" id="privacy" aria-labelledby="privacy-title">
+        <div class="privacy-grid section-grid">
+          <div class="privacy-copy reveal">
+            <div class="section-kicker section-kicker-light"><span>04</span><span>Privacy, in plain language</span></div>
+            <h2 id="privacy-title">The file stays<br /><em>with you.</em></h2>
+            <p>Media processing, text recognition, redaction, watermarking, and output checks happen on your device. No account. No upload path. No original file overwritten.</p>
+            <a class="button button-light" href="#faq">Read the boundaries <span aria-hidden="true">↓</span></a>
+          </div>
+          <div class="privacy-receipt reveal reveal-delay">
+            <div class="receipt-top"><span class="mono-label">METASTAMP / LOCAL REPORT</span><span class="receipt-lock">⌁</span></div>
+            <div class="receipt-title">Processing receipt</div>
+            <div class="receipt-row"><span>Source</span><strong>IMG_4823.JPG</strong></div>
+            <div class="receipt-row"><span>Metadata</span><strong class="receipt-good">Personal fields removed</strong></div>
+            <div class="receipt-row"><span>Visual edit</span><strong class="receipt-good">1 region burned in</strong></div>
+            <div class="receipt-row"><span>Output</span><strong class="receipt-good">Reopened + checked</strong></div>
+            <div class="receipt-total"><span>DELIVERY STATUS</span><strong><i></i> READY TO SHARE</strong></div>
+            <div class="receipt-barcode" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="pricing section-grid" id="get" aria-labelledby="pricing-title">
+        <div class="section-kicker reveal"><span>05</span><span>Keep it simple</span></div>
+        <div class="pricing-copy reveal reveal-delay">
+          <h2 id="pricing-title">A little more<br /><em>control.</em></h2>
+          <p>Start with three free exports each day. Unlock unlimited processing once, and keep using the tools offline with your device.</p>
+        </div>
+        <div class="price-card reveal reveal-delay-2">
+          <div class="price-top"><span class="price-label">ONE-TIME UNLOCK</span><span class="price-badge">No subscription</span></div>
+          <div class="price"><span>$</span>4<span class="price-cents">99</span></div>
+          <p>Unlimited exports<br />on iPhone and iPad</p>
+          <button class="button button-dark full-button" type="button" data-toast-trigger>Get ready for launch <span aria-hidden="true">↗</span></button>
+          <small>Pricing shown for the US App Store. Availability follows launch.</small>
+        </div>
+      </section>
+
+      <section class="faq section-grid" id="faq" aria-labelledby="faq-title">
+        <div class="section-kicker reveal"><span>06</span><span>Questions, answered</span></div>
+        <div class="faq-main reveal reveal-delay">
+          <h2 id="faq-title">The details<br /><em>matter.</em></h2>
+          <div class="faq-list">
+            <details open>
+              <summary>Does MetaStamp upload my files?</summary>
+              <p>No. Media processing and review happen on the device. An iCloud original that has not downloaded yet may still need a network connection from Apple to fetch the source.</p>
+            </details>
+            <details>
+              <summary>Does it edit the original?</summary>
+              <p>Never by default. MetaStamp writes a new copy into a private temporary workspace, then gives you a choice of where to save or share it.</p>
+            </details>
+            <details>
+              <summary>Can a watermark stop someone from removing it?</summary>
+              <p>No. A watermark makes the intended use visible. It is a practical boundary for a handoff, not a promise that screenshots or editing are impossible.</p>
+            </details>
+            <details>
+              <summary>Which formats are supported?</summary>
+              <p>The current workflow is focused on image files. Video, Live Photo, PDF, and Office paths have format-specific boundaries and should only be marked ready when MetaStamp can verify the exported copy.</p>
+            </details>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-top section-grid">
+        <a class="brand footer-brand" href="#top"><span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span><span>MetaStamp</span></a>
+        <p>Share with confidence.<br />Keep control.</p>
+        <div class="footer-links"><a href="#workflow">Workflow</a><a href="#privacy">Privacy</a><a href="#faq">FAQ</a></div>
+      </div>
+      <div class="footer-bottom section-grid"><span>© <span data-year>2026</span> MetaStamp</span><span>Designed for iOS 17+</span><span>Made for considered sharing.</span></div>
+    </footer>
+  </div>
+  <div class="toast" role="status" aria-live="polite" data-toast>We’ll let you know when MetaStamp is ready.</div>
+  <script src="script.js"></script>
+</body>
+</html>
