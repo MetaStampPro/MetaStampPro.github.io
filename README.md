@@ -1,10 +1,10 @@
 # MetaStamp website
 
-A dependency-free static landing page for MetaStamp. The page lives in `website/` and uses a compressed WebP version of the local sample image from the iOS project.
+A dependency-free static landing page for MetaStamp. In this GitHub Pages repository the site is served from the repository root. The source version is maintained in the iOS project's `website/` directory and uses a compressed WebP sample image.
 
 ## Preview locally
 
-From the repository root:
+From the source project's repository root:
 
 ```bash
 python3 -m http.server 8765 --directory website
