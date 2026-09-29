@@ -1,6 +1,6 @@
 # MetaStamp website
 
-A dependency-free static landing page for MetaStamp. The page lives in `website/` and uses a compressed WebP version of the local sample image from the iOS project, with the original PNG as a fallback.
+A dependency-free static landing page for MetaStamp. The page lives in `website/` and uses a compressed WebP version of the local sample image from the iOS project.
 
 ## Preview locally
 
