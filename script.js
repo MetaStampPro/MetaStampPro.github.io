@@ -53,6 +53,10 @@ const reviewCard = document.querySelector('[data-review-card]');
 const demoTrigger = document.querySelector('.demo-trigger');
 demoTrigger?.addEventListener('click', () => {
   const clean = reviewCard?.classList.toggle('is-clean');
+  demoTrigger.setAttribute('aria-pressed', String(clean));
+  reviewCard.querySelector('[data-preview-status]').textContent = clean ? 'Cleaned copy' : 'Original photo';
+  reviewCard.querySelector('[data-preview-name]').textContent = clean ? 'IMG_4823_clean.jpg' : 'IMG_4823.jpg';
+  reviewCard.querySelector('[data-preview-metadata]').textContent = clean ? 'GPS and device data removed' : 'GPS and device data present';
   demoTrigger.innerHTML = clean
     ? 'Reset the preview <span aria-hidden="true">↺</span>'
     : 'Preview a clean copy <span aria-hidden="true">↗</span>';
@@ -62,26 +66,26 @@ const modeContent = {
   photo: {
     overline: 'PHOTO · DEFAULT CHECK',
     title: 'For the photo you almost shared.',
-    copy: 'Strip personal metadata, cover the address on the label, then export a copy with a purpose watermark.',
+    copy: 'Choose a photo to clean its personal metadata and keep a separate copy.',
     type: 'JPG',
     meta: 'IMG_4823_clean',
-    list: ['GPS and device fields reviewed', 'One visual region confirmed', 'New file verified after export']
+    list: ['GPS and device fields reviewed', 'Original photo preserved', 'Cleaned copy checked before export']
   },
   document: {
     overline: 'DOCUMENT · CAPABILITY BOUNDARY',
     title: 'For a file that needs context.',
-    copy: 'When document support is available, properties and structure stay visible in the review before delivery.',
+    copy: 'Use Shortcuts to create an image-only PDF or check which Office document properties can be inspected.',
     type: 'PDF',
     meta: 'Capabilities_by_format',
-    list: ['Supported actions shown first', 'Purpose watermark made explicit', 'Unverified structure stays flagged']
+    list: ['Supported actions shown first', 'PDF pages checked after export', 'Unverified structure stays flagged']
   },
   batch: {
     overline: 'BATCH · ONE RULE, MANY FILES',
     title: 'For the folder with a deadline.',
-    copy: 'Apply one clean-up preset across a group, then retry only the files that need attention.',
+    copy: 'Select several photos at once. Each copy is checked individually and can be saved or sent with the others.',
     type: '12×',
     meta: 'Batch_2026-09-25',
-    list: ['Shared rules across the queue', 'Each result keeps its own status', 'Failures stay separate and retryable']
+    list: ['Automatic metadata cleaning', 'Each result keeps its own status', 'Failures stay separate and retryable']
   }
 };
 

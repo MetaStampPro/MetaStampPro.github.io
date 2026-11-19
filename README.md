@@ -2,6 +2,10 @@
 
 A dependency-free static landing page for MetaStamp. In this GitHub Pages repository the site is served from the repository root. The source version is maintained in the iOS project's `website/` directory and uses a compressed WebP sample image.
 
+The demo follows the app’s three steps. Choose photos, clean their metadata on device, then save or send the verified copies. The before-and-after demo changes the metadata report and keeps the same photograph visible.
+
+The header, footer, favicon and Apple touch icon share `assets/app-icon.png`, a 180 × 180 export of the iOS master at `MetaStamp/MetaStamp/Assets.xcassets/AppIcon.appiconset/AppIcon-1024.png` in the source project.
+
 ## Preview locally
 
 From the source project's repository root:
